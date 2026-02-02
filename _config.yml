@@ -13,42 +13,35 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+# Site settings
+title: Sydney Human Augmentation Lab
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+description: >-
+  Sydney Human Augmentation Lab (Sydney HAL) designs and evaluates technologies
+  that extend human perception, action, and capability through rigorous,
+  human-centred research.
+url: https://sydneyhal.github.io
+baseurl: "" # keep empty for an org/user site repo named sydneyhal.github.io
+
+twitter_username:
+github_username: SydneyHAL
+
 minimal_mistakes_skin: default
 search: true
+timezone: Australia/Sydney
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
+
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -57,78 +50,66 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# Theme navigation (Minimal Mistakes uses "main" for top nav)
+navigation:
+  main:
+    - title: About
+      url: /about/
+    - title: Research
+      url: /themes/
+    - title: People
+      url: /people/
+    - title: Publications
+      url: /publications/
+    - title: Grants
+      url: /grants/
+    - title: Location
+      url: /location/
+
+# Author box (you can hide author_profile per page later)
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: Sydney HAL
+  avatar: /assets/images/bio-photo.jpg
+  bio: Research in human augmentation, XR, haptics, sensing, and assistive technology.
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: Email
+      icon: fas fa-fw fa-envelope
+      url: mailto:lab@uts.edu.au
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/SydneyHAL
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/SydneyHAL
 
+# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
+      comments: false
+      share: false
+      related: false
+
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
 
+# Archives (optional)
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
-
-  title: Sydney Human Augmentation Lab
-description: Research in human augmentation, XR, haptics, and assistive technology
-url: https://sydneyhal.github.io
-
-nav:
-  - title: About
-    url: /about/
-  - title: Research
-    url: /themes/
-  - title: People
-    url: /people/
-  - title: Publications
-    url: /publications/
-  - title: Grants
-    url: /grants/
-  - title: Location
-    url: /location/
-

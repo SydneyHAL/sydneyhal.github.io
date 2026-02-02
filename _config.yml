@@ -50,21 +50,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# Theme navigation (Minimal Mistakes uses "main" for top nav)
-navigation:
-  main:
-    - title: About
-      url: /about/
-    - title: Research
-      url: /themes/
-    - title: People
-      url: /people/
-    - title: Publications
-      url: /publications/
-    - title: Grants
-      url: /grants/
-    - title: Location
-      url: /location/
 
 # Author box (you can hide author_profile per page later)
 author:

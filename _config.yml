@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # Site settings
-title: Sydney Human Augmentation Lab
+title: Human Augmentation Lab
 email:
 description: >-
-  Sydney Human Augmentation Lab (Sydney HAL) designs and evaluates technologies
+  The Human Augmentation Lab (HAL) designs and evaluates technologies
   that extend human perception, action, and capability through rigorous,
   human-centred research.
 url: https://sydneyhal.github.io

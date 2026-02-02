@@ -1,0 +1,18 @@
+title: "Lab Walkthrough"
+subtitle: "A quick tour of our space and work"
+slides:
+  - image: /assets/images/tour/01-entry.jpg
+    alt: "Entry and overview"
+    caption: "Entry and overview"
+
+  - image: /assets/images/tour/02-prototype-bench.jpg
+    alt: "Prototyping bench"
+    caption: "Prototyping and instrumentation"
+
+  - image: /assets/images/tour/03-vr-rig.jpg
+    alt: "XR setup"
+    caption: "XR and interaction demos"
+
+  - image: /assets/images/tour/04-study-space.jpg
+    alt: "Study space"
+    caption: "User study setup and evaluation"

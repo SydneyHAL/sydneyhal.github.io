@@ -1,1 +1,41 @@
+<section class="hal-tour" aria-label="Lab walkthrough tour">
+  <div class="hal-tour__head">
+    <h2 class="hal-tour__title">{{ site.data.tour.title }}</h2>
+    {% if site.data.tour.subtitle %}
+      <p class="hal-tour__subtitle">{{ site.data.tour.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  <div class="hal-tour__frame" data-hal-tour>
+    <button class="hal-tour__btn hal-tour__btn--prev" type="button" aria-label="Previous image" data-tour-prev>
+      ‹
+    </button>
+
+    <div class="hal-tour__viewport">
+      {% for s in site.data.tour.slides %}
+        <figure class="hal-tour__slide" data-tour-slide {% if forloop.first %}data-active="true"{% endif %}>
+          <img src="{{ s.image | relative_url }}" alt="{{ s.alt | escape }}" loading="lazy">
+          {% if s.caption %}
+            <figcaption class="hal-tour__caption">{{ s.caption }}</figcaption>
+          {% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+
+    <button class="hal-tour__btn hal-tour__btn--next" type="button" aria-label="Next image" data-tour-next>
+      ›
+    </button>
+  </div>
+
+  <div class="hal-tour__dots" aria-label="Tour navigation">
+    {% for s in site.data.tour.slides %}
+      <button type="button"
+              class="hal-tour__dot"
+              aria-label="Go to image {{ forloop.index }}"
+              data-tour-dot="{{ forloop.index0 }}"
+              {% if forloop.first %}aria-current="true"{% endif %}>
+      </button>
+    {% endfor %}
+  </div>
+</section>
 

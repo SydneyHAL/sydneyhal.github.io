@@ -9,5 +9,7 @@ main:
     url: /publications/
   - title: Grants
     url: /grants/
+  - title: News
+    url: /news/
   - title: Location
     url: /location/

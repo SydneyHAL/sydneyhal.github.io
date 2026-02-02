@@ -6,4 +6,12 @@ entries_layout: list
 author_profile: false
 ---
 
-Updates, announcements, publications, awards, and lab activities from Sydney HAL.
+{% assign news_posts = site.posts %}
+
+{% if news_posts.size > 0 %}
+  {% for post in news_posts %}
+    {% include archive-single.html type="list" %}
+  {% endfor %}
+{% else %}
+No news yet.
+{% endif %}

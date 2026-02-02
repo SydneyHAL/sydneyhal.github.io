@@ -1,8 +1,22 @@
 ---
+title: About
 permalink: /about/
-title: "About"
+layout: single
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+The Sydney Human Augmentation Lab (Sydney HAL) investigates how interactive systems
+can extend human capability while remaining usable, trustworthy, and grounded in
+real-world contexts.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Human augmentation technologies promise to support perception, decision making,
+learning, and mobility. However, many systems fail when deployed outside the lab due
+to poor alignment with embodied practice, limited evaluation, or unrealistic assumptions
+about users and environments.
+
+Sydney HAL addresses these challenges through:
+- human-centred and participatory design
+- empirical evaluation in realistic tasks and settings
+- interdisciplinary collaboration across design, engineering, and health
+
+The lab prioritises augmentation that complements human skill rather than replacing it,
+with a strong focus on accessibility, safety, and long-term adoption.

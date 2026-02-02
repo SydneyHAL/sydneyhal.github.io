@@ -113,3 +113,22 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+  title: Sydney Human Augmentation Lab
+description: Research in human augmentation, XR, haptics, and assistive technology
+url: https://sydneyhal.github.io
+
+nav:
+  - title: About
+    url: /about/
+  - title: Research
+    url: /themes/
+  - title: People
+    url: /people/
+  - title: Publications
+    url: /publications/
+  - title: Grants
+    url: /grants/
+  - title: Location
+    url: /location/
+
